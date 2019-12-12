@@ -63,7 +63,8 @@ class SingleList:
 
     def clear(self):
         '''czyszczenie listy, usuwa powiazania head i tail oraz ustawia długosć na 0'''
-        return SingleList()
+        self.head = self.tail = None
+        self.length = 0
 
 
     def remove_tail(self):
