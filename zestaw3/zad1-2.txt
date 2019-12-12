@@ -1,0 +1,50 @@
+Zad 1
+    A
+Kod się wykona, jednak należało by pozbyć sie średników
+
+x = 2 ; y = 3 ;
+if (x > y):
+   result = x;
+else:
+   result = y;
+print(result)
+
+    B
+instrukcja if powina wystąpić w nowym bloku
+
+for i in "qwerty": if ord(i) < 100:print(i)
+
+for i in "qwerty":
+    if ord(i) < 100: print(i)
+
+    C
+Zostało tu użytę wyrażenie trójargumentowe
+
+for i in "axby": print(ord(i)) if ord(i) < 100 else i
+
+Zad 2
+    A
+    L = [3, 5, 4] ; L = L.sort()
+L.sort() zwróci None, więc należy wywołać jedynie L.sort() bez nadpisania L
+
+    B
+    x, y = 1, 2, 3
+Za mało zmiennych w stasunku do podanych wartości
+
+    C
+    X = 1, 2, 3 ; X[1] = 4
+Brak klamer, pzez co X nie jest rozumiane jako referencja do kolekcji
+
+    D
+    X = [1, 2, 3] ; X[3] = 4
+Następuje tutaj odwołanie poza listę, indeks ostatniego elementu = 2
+
+    E
+    X = "abc" ; X.append("d")
+klasa string nie ma atrybutu append() jest to atrybut list
+
+    F
+    map(pow, range(8))
+podano zbyt mało argumentów, funkca pow potrzebuje dwóch
+np. map(pow, range(8), 8*[2])
+
